@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FocusBlk Support</title>
+<meta name="description" content="Help and contact for FocusBlk.">
+<style>
+  :root {
+    --bg: #f4f4f8; --surface: #ffffff; --text: #1c1c1e; --muted: #5f5f6b;
+    --brand: #5b5fc7; --border: #e3e3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --surface: #1c1c1e; --text: #f2f2f7; --muted: #a1a1ab; --brand: #8e91f0; --border: #2c2c30; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Noto Sans Arabic", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .icon {
+    width: 52px; height: 52px; border-radius: 12px; flex: none;
+    background: linear-gradient(135deg, #7b7fe0, #5b5fc7 50%, #34368a);
+    display: grid; place-items: center;
+  }
+  .icon svg { width: 34px; height: 34px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+  h2 { font-size: 19px; margin: 28px 0 6px; }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 8px 22px 22px; margin-top: 20px; }
+  .summary { border-inline-start: 4px solid var(--brand); padding: 10px 16px; background: var(--surface); border-radius: 12px; margin: 20px 0 0; }
+  ul { padding-inline-start: 22px; }
+  a { color: var(--brand); }
+  nav { display: flex; gap: 8px; margin-top: 18px; }
+  nav a { text-decoration: none; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); font-size: 15px; }
+  [dir="rtl"] { text-align: right; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="9"/><path d="M50 20 A30 30 0 1 1 20 50" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/><circle cx="20" cy="50" r="3.6" fill="#ff6b6b"/><circle cx="50" cy="50" r="3.8" fill="#fff"/></svg>
+    </div>
+    <div>
+      <h1>FocusBlk Support</h1>
+      <div class="muted">Help and contact · المساعدة والتواصل</div>
+    </div>
+  </header>
+  <nav><a href="#en">English</a><a href="#ar" lang="ar">العربية</a><a href="privacy.html">Privacy Policy</a></nav>
+
+  <section id="en" class="card">
+    <p class="summary"><strong>Need help?</strong> <a href="https://github.com/JehadAlbuyaybi/focusblk/issues/new">Send us a support request</a> and we'll get back to you.</p>
+
+    <h2>Blocking doesn't start</h2>
+    <p>FocusBlk needs Screen Time access. Open the app and allow it when asked, or go to Settings › Screen Time and make sure Screen Time is on.</p>
+
+    <h2>A session is shorter than 15 minutes</h2>
+    <p>iOS doesn't allow focus sessions under 15 minutes, so custom durations start at 15 minutes.</p>
+
+    <h2>I can't end a session</h2>
+    <p>If strict mode is on, the session can't be stopped until the timer ends. This is on purpose.</p>
+
+    <h2>Location triggers don't work</h2>
+    <p>Allow location access for FocusBlk in Settings › Privacy &amp; Security › Location Services.</p>
+
+    <h2>Your data</h2>
+    <p>FocusBlk collects no data. Everything stays on your device. See the <a href="privacy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <section id="ar" class="card" lang="ar" dir="rtl">
+    <p class="summary"><strong>تحتاج مساعدة؟</strong> <a href="https://github.com/JehadAlbuyaybi/focusblk/issues/new">أرسل لنا طلب دعم</a> وسنرد عليك.</p>
+
+    <h2>الحظر لا يبدأ</h2>
+    <p>يحتاج فوكس بلك إذن «مدة استخدام الجهاز». افتح التطبيق واسمح بالإذن عند طلبه، أو تأكد من تفعيل «مدة استخدام الجهاز» من الإعدادات.</p>
+
+    <h2>لا أستطيع اختيار أقل من 15 دقيقة</h2>
+    <p>لا يسمح نظام iOS بجلسات تركيز أقل من 15 دقيقة، لذلك يبدأ الوقت المخصص من 15 دقيقة.</p>
+
+    <h2>لا أستطيع إنهاء الجلسة</h2>
+    <p>إذا كان الوضع الصارم مفعّلًا، لا يمكن إيقاف الجلسة حتى ينتهي المؤقت، وهذا مقصود.</p>
+
+    <h2>الحظر حسب الموقع لا يعمل</h2>
+    <p>اسمح لفوكس بلك باستخدام الموقع من الإعدادات › الخصوصية والأمن › خدمات الموقع.</p>
+
+    <h2>بياناتك</h2>
+    <p>لا يجمع فوكس بلك أي بيانات، وكل شيء يبقى على جهازك. راجع <a href="privacy.html">سياسة الخصوصية</a>.</p>
+  </section>
+</main>
+</body>
+</html>
